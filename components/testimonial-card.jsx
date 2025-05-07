@@ -11,9 +11,9 @@ export default function TestimonialCard({ quote, author, role, image }) {
           <Image
             src={image || "/placeholder.svg"}
             alt={author}
-            width={50}
-            height={50}
-            className="h-12 w-12 object-cover"
+            width={30}
+            height={30}
+            className="h-8 w-8 object-cover"
           />
         </div>
         <div>

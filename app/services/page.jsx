@@ -17,7 +17,7 @@ export default function ServicesPage() {
         "API development and integration",
         "Web performance optimization",
       ],
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/wd.jpg",
       cta: "Start your web project",
     },
     {
@@ -33,7 +33,7 @@ export default function ServicesPage() {
         "Analytics and reporting dashboards",
         "Third-party integrations",
       ],
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/sas.jpg",
       cta: "Build your SaaS product",
     },
     {
@@ -49,7 +49,7 @@ export default function ServicesPage() {
         "Push notifications and offline functionality",
         "Mobile app analytics and performance monitoring",
       ],
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/md.jpg",
       cta: "Create your mobile app",
     },
     {
@@ -65,7 +65,7 @@ export default function ServicesPage() {
         "Progress tracking and reporting",
         "Stakeholder communication",
       ],
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/pm.jpg",
       cta: "Manage your project",
     },
   ]

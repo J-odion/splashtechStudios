@@ -5,19 +5,32 @@ import TestimonialCard from "@/components/testimonial-card"
 import ProjectCard from "@/components/project-card"
 
 export default function Home() {
+  const companies = [
+    { name: "Eduvacity", logo: "/1.jpeg" },
+    { name: "Kairos Energy", logo: "/2.png" },
+    { name: "Z-Korting", logo: "/3.jpeg" },
+    { name: "Kairoshof", logo: "/4.png" },
+    { name: "Cudium", logo: "/5.jpeg" },
+    { name: "Creitgo", logo: "/logo.svg" },
+    { name: "GoddessZara", logo: "/za1.png" },
+    { name: "Littleexplorer", logo: "/lt.png" },
+    { name: "nextfinance", logo: "/nklogo.png" },
+    { name: "mkstikk", logo: "/mkl.png" },
+
+  ];
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-slate-900 to-slate-800 text-white">
-        <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
-        <div className="container mx-auto px-4 py-24 md:py-32 relative z-10">
+      <section className="relative bg-gradient-to-b h-[80vh] from-slate-900 to-slate-800 text-white">
+        <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] bg-center [mask-image:linear-gradient(180deg,blue,rgba(255,155,155,0))]"></div>
+        <div className="container mx-auto px-4 py-24 md:py-48 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               We build{" "}
-              <span className="text-primary bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
                 digital products
               </span>{" "}
-              that help businesses grow
+              that help businesses thrive
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-300">
               From concept to launch, we create custom web applications, mobile apps, and SaaS products that drive
@@ -39,7 +52,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-background to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-20 from-background to-transparent"></div>
       </section>
 
       {/* Clients Section */}
@@ -47,17 +60,24 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <p className="text-center text-muted-foreground mb-8">Trusted by innovative companies</p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-            {["company1", "company2", "company3", "company4", "company5"].map((company) => (
-              <div key={company} className="grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all">
-                <Image
-                  src={`/placeholder.svg?height=40&width=120`}
-                  alt={`${company} logo`}
-                  width={120}
-                  height={40}
-                  className="h-8 md:h-10 w-auto"
-                />
+            <div className="overflow-hidden relative w-[40vw]">
+              <div className="flex w-[60vw] mx-auto animate-scroll">
+                {companies.map((company, index) => (
+                  <div
+                    key={`${company.name}-${index}`}
+                    className="mx-4 hover:grayscale-0 opacity-100 transition-all"
+                  >
+                    <Image
+                      src={company.logo}
+                      alt={`${company.name} logo`}
+                      width={120}
+                      height={40}
+                      className="h-8 md:h-10 w-auto object-contain"
+                    />
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
@@ -160,22 +180,22 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard
-              title="Fintech Dashboard"
+              title="Mattrack"
               category="Web Application"
-              image="/placeholder.svg?height=400&width=600"
-              href="/portfolio/fintech-dashboard"
+              image="/mm.png"
+              href="/portfolio/mattrack"
             />
             <ProjectCard
-              title="E-commerce Mobile App"
-              category="Mobile Development"
-              image="/placeholder.svg?height=400&width=600"
-              href="/portfolio/ecommerce-app"
+              title="littleExplorer"
+              category="Web Development"
+              image="/lt4.png"
+              href="/portfolio/littleExplorer"
             />
             <ProjectCard
-              title="SaaS Marketing Platform"
+              title="Credi-go"
               category="SaaS Development"
-              image="/placeholder.svg?height=400&width=600"
-              href="/portfolio/saas-marketing-platform"
+              image="/cg1.png"
+              href="/credit-go"
             />
           </div>
         </div>
@@ -240,19 +260,19 @@ export default function Home() {
               quote="Working with this agency was a game-changer for our business. They delivered our SaaS platform on time and on budget."
               author="Sarah Johnson"
               role="CEO, TechStart"
-              image="/placeholder.svg?height=100&width=100"
+              image="/user.avif"
             />
             <TestimonialCard
               quote="The team's expertise in mobile app development helped us create an app that our users love. Highly recommended!"
               author="Michael Chen"
               role="Product Manager, AppWorks"
-              image="/placeholder.svg?height=100&width=100"
+              image="/user.avif"
             />
             <TestimonialCard
               quote="Their project management skills are exceptional. They kept our complex web development project on track from start to finish."
               author="Emily Rodriguez"
               role="Marketing Director, GrowthCo"
-              image="/placeholder.svg?height=100&width=100"
+              image="/user.avif"
             />
           </div>
         </div>

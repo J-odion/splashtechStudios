@@ -4,18 +4,54 @@ import { ArrowLeft, ArrowRight, CheckCircle } from "lucide-react"
 
 // This would typically come from a CMS or API
 const projects = {
-  "fintech-dashboard": {
-    title: "Fintech Dashboard",
-    category: "Web Application",
-    client: "InvestTech Inc.",
-    year: "2023",
-    duration: "4 months",
-    technologies: ["React", "Next.js", "Node.js", "MongoDB", "Chart.js", "TailwindCSS"],
-    heroImage: "/placeholder.svg?height=800&width=1600",
+  "littleExplorer": {
+    title: "Littleexplorer Academy",
+    category: "Education",
+    client: "John",
+    year: "2025",
+    duration: "2 Days",
+    technologies: ["Next", "Typescript", "React", "Tailwindcss",],
+    heroImage: "/lt4.png",
     gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "/lt3.png",
+      "/lt4.png",
+      "/lt1.png",
+      "/lt2.png",
+    ],
+    overview:
+      "The is is a school focused in bringing out the stars in it's student",
+    challenge:
+      "The main challenge was building a scalable multi-tenant architecture that could handle thousands of businesses with varying needs and usage patterns. We also needed to integrate with multiple third-party services while maintaining performance and data security.",
+    solution:
+      "We developed a cloud-based SaaS platform with a microservices architecture hosted on AWS. We implemented a flexible subscription model with Stripe and built a comprehensive dashboard for monitoring marketing campaigns across channels. The platform features automated workflows, A/B testing capabilities, and detailed analytics.",
+    results: [
+      "Acquired 500+ paying customers within the first year",
+      "95% customer retention rate",
+      "Average 30% improvement in marketing ROI for customers",
+      "Successfully raised Series A funding based on platform performance",
+    ],
+    testimonial: {
+      quote:
+        "This platform has revolutionized how we approach marketing. The intuitive interface and powerful automation features have saved us countless hours and significantly improved our results.",
+      author: "Emily Rodriguez",
+      role: "Marketing Director, GrowthCo",
+    },
+    nextProject: "goddesszara",
+  },
+  "goddesszara": {
+    title: "Goddess Zara",
+    category: "Web Application",
+    client: "Esther Omena.",
+    year: "2025",
+    duration: "2 months",
+    technologies: ["React", "Next.js", "vercel", "TailwindCSS"],
+    heroImage: "/za6.png",
+    gallery: [
+      "/za6.png",
+      "/za2.png",
+      "/za3.png",
+      "/za4.png",
+      "/za5.png",
     ],
     overview:
       "InvestTech needed a comprehensive financial dashboard to help their customers track investments, manage portfolios, and make data-driven decisions. We built a responsive web application with real-time data visualization, portfolio management tools, and personalized insights.",
@@ -35,27 +71,25 @@ const projects = {
       author: "Sarah Johnson",
       role: "CTO, InvestTech Inc.",
     },
-    nextProject: "ecommerce-app",
+    nextProject: "mattrack",
   },
-  "ecommerce-app": {
-    title: "E-commerce Mobile App",
-    category: "Mobile Development",
-    client: "FashionForward",
+  "mattrack": {
+    title: "Mattrack",
+    category: "SAAS",
+    client: "KairosHof",
     year: "2023",
     duration: "6 months",
     technologies: ["React Native", "Node.js", "Express", "MongoDB", "Stripe", "Firebase"],
-    heroImage: "/placeholder.svg?height=800&width=1600",
+    heroImage: "/mm.png",
     gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "/mm.png",
     ],
     overview:
-      "FashionForward wanted to expand their online presence with a mobile app that would provide a seamless shopping experience for their customers. We developed a cross-platform mobile application with AR try-on features, personalized recommendations, and a streamlined checkout process.",
+      "TruckWorlds wanted to expand their online presence with a mobile app that would provide a seamless shipping experience for their customers. We developed a cross-platform mobile application with personalized recommendations, and a streamlined checkout process.",
     challenge:
-      "The client needed a mobile app that would stand out in a crowded market while maintaining brand consistency with their existing web platform. They also required advanced features like AR try-on and personalized recommendations without compromising on performance.",
+      "The client needed a mobile app that would stand out in a crowded market while maintaining brand consistency with their existing web platform. They also required advanced features like personalized recommendations without compromising on performance.",
     solution:
-      "We built a cross-platform app using React Native to ensure consistent experience across iOS and Android. We integrated AR technology for virtual try-on features and implemented a recommendation engine using machine learning. The app includes offline functionality, push notifications, and a seamless checkout process with multiple payment options.",
+      "We built a cross-platform app using React Native to ensure consistent experience across iOS and Android. We implemented a recommendation engine using machine learning. The app includes offline functionality, push notifications, and a seamless checkout process with multiple payment options.",
     results: [
       "Increased mobile sales by 75% in the first quarter",
       "35% higher average order value compared to the website",
@@ -68,53 +102,21 @@ const projects = {
       author: "Michael Chen",
       role: "Digital Director, FashionForward",
     },
-    nextProject: "saas-marketing-platform",
+    nextProject: "credit-go",
   },
-  "saas-marketing-platform": {
-    title: "SaaS Marketing Platform",
-    category: "SaaS Development",
-    client: "MarketBoost",
-    year: "2022",
-    duration: "8 months",
-    technologies: ["React", "Node.js", "PostgreSQL", "Redis", "AWS", "Stripe"],
-    heroImage: "/placeholder.svg?height=800&width=1600",
-    gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-    ],
-    overview:
-      "MarketBoost needed an all-in-one marketing platform to help small and medium businesses manage their marketing efforts. We developed a SaaS solution with email marketing, social media management, content scheduling, and analytics features.",
-    challenge:
-      "The main challenge was building a scalable multi-tenant architecture that could handle thousands of businesses with varying needs and usage patterns. We also needed to integrate with multiple third-party services while maintaining performance and data security.",
-    solution:
-      "We developed a cloud-based SaaS platform with a microservices architecture hosted on AWS. We implemented a flexible subscription model with Stripe and built a comprehensive dashboard for monitoring marketing campaigns across channels. The platform features automated workflows, A/B testing capabilities, and detailed analytics.",
-    results: [
-      "Acquired 500+ paying customers within the first year",
-      "95% customer retention rate",
-      "Average 30% improvement in marketing ROI for customers",
-      "Successfully raised Series A funding based on platform performance",
-    ],
-    testimonial: {
-      quote:
-        "This platform has revolutionized how we approach marketing. The intuitive interface and powerful automation features have saved us countless hours and significantly improved our results.",
-      author: "Emily Rodriguez",
-      role: "Marketing Director, GrowthCo",
-    },
-    nextProject: "healthcare-portal",
-  },
-  "healthcare-portal": {
+  "credit-go": {
     title: "Healthcare Patient Portal",
     category: "Web Application",
     client: "MediCare Health Network",
     year: "2022",
     duration: "5 months",
     technologies: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "AWS"],
-    heroImage: "/placeholder.svg?height=800&width=1600",
+    heroImage: "/cg1.png",
     gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "/cg1.png",
+      "/cg2.png",
+      "/cg3.png",
+      "/cg4.png",
     ],
     overview:
       "MediCare Health Network needed a secure patient portal to improve patient engagement and streamline administrative processes. We developed a HIPAA-compliant web application for scheduling appointments, accessing medical records, and communicating with healthcare providers.",
@@ -134,20 +136,21 @@ const projects = {
       author: "Dr. James Wilson",
       role: "CIO, MediCare Health Network",
     },
-    nextProject: "real-estate-platform",
+    nextProject: "nextFinance",
   },
-  "real-estate-platform": {
-    title: "Real Estate Platform",
+  "nextFinance": {
+    title: "Next finance",
     category: "Web Application",
-    client: "PropertyPro",
-    year: "2021",
-    duration: "7 months",
+    client: "Finance",
+    year: "2024",
+    duration: "1 day",
     technologies: ["React", "Next.js", "Node.js", "PostgreSQL", "ElasticSearch", "Google Maps API"],
-    heroImage: "/placeholder.svg?height=800&width=1600",
+    heroImage: "/nk1.png",
     gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "/nk1.png",
+      "/nk2.png",
+      "/nk3.png",
+      "/nk4.png",
     ],
     overview:
       "PropertyPro wanted to revolutionize the real estate market with a comprehensive platform for property listing, searching, and management. We developed a web application with advanced search capabilities, virtual tours, and analytics for property owners and agents.",
@@ -167,20 +170,22 @@ const projects = {
       author: "Robert Thompson",
       role: "CEO, PropertyPro",
     },
-    nextProject: "fitness-tracking-app",
+    nextProject: "jhnmk",
   },
-  "fitness-tracking-app": {
-    title: "Fitness Tracking App",
-    category: "Mobile Development",
-    client: "FitLife",
-    year: "2021",
+  "jhnmk": {
+    title: "Across the valley",
+    category: "Web Development",
+    client: "John Mark",
+    year: "2025",
     duration: "5 months",
-    technologies: ["React Native", "Node.js", "MongoDB", "Firebase", "Apple HealthKit", "Google Fit"],
-    heroImage: "/placeholder.svg?height=800&width=1600",
+    technologies: ["Next", "React",],
+    heroImage: "/a2.png",
     gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "/a2.png",
+      "/a3.png",
+      "/a4.png",
+      "/a5.png",
+      "/a6.png",
     ],
     overview:
       "FitLife wanted to create a comprehensive fitness tracking app to help users monitor their workouts, nutrition, and health metrics. We developed a cross-platform mobile application with social features, personalized workout plans, and integration with wearable devices.",
@@ -201,6 +206,39 @@ const projects = {
       role: "Founder, FitLife",
     },
     nextProject: "fintech-dashboard",
+  },
+  "mkstikk": {
+    title: "Mkstikks",
+    category: "Web",
+    client: "Mkstikks",
+    year: "2025",
+    duration: "6 days",
+    technologies: ["React Native", "Node.js", "Express", "MongoDB", "Stripe", "Firebase"],
+    heroImage: "/mk1.png",
+    gallery: [
+      "/mk1.png",
+      "/mk2.png",
+      "/mk4.png",
+    ],
+    overview:
+      "TruckWorlds wanted to expand their online presence with a mobile app that would provide a seamless shipping experience for their customers. We developed a cross-platform mobile application with personalized recommendations, and a streamlined checkout process.",
+    challenge:
+      "The client needed a mobile app that would stand out in a crowded market while maintaining brand consistency with their existing web platform. They also required advanced features like personalized recommendations without compromising on performance.",
+    solution:
+      "We built a cross-platform app using React Native to ensure consistent experience across iOS and Android. We implemented a recommendation engine using machine learning. The app includes offline functionality, push notifications, and a seamless checkout process with multiple payment options.",
+    results: [
+      "Increased mobile sales by 75% in the first quarter",
+      "35% higher average order value compared to the website",
+      "200,000+ downloads in the first three months",
+      "4.8/5 average rating on app stores",
+    ],
+    testimonial: {
+      quote:
+        "The mobile app has transformed our business. The AR try-on feature has significantly reduced return rates and increased customer satisfaction.",
+      author: "Michael",
+      role: "Digital Director, FashionForward",
+    },
+
   },
 }
 

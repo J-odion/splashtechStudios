@@ -83,7 +83,7 @@ export default function AboutPage() {
               <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary/10 rounded-lg z-0"></div>
               <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-primary/10 rounded-lg z-0"></div>
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/6.jpg"
                 alt="Our team"
                 width={800}
                 height={600}
@@ -138,7 +138,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Team */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold mb-6">Meet Our Team</h2>
@@ -171,7 +171,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Why Choose Us */}
       <section className="py-20 bg-slate-50 dark:bg-slate-900/50">
@@ -179,7 +179,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/7.jpg"
                 alt="Why choose us"
                 width={800}
                 height={600}

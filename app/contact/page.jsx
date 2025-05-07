@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Mail, Phone, MapPin, Calendar, ArrowRight, CheckCircle } from "lucide-react"
+import { Mail, Phone, MapPin, Calendar, ArrowRight, CheckCircle, MessageCircle } from "lucide-react"
 
 export default function ContactPage() {
   const [formState, setFormState] = useState({
@@ -69,8 +69,8 @@ export default function ContactPage() {
               </div>
               <h3 className="text-xl font-bold mb-3">Call Us</h3>
               <p className="text-muted-foreground mb-4">Speak to our friendly team directly</p>
-              <a href="tel:+11234567890" className="text-primary font-medium hover:underline">
-                +1 (123) 456-7890
+              <a href="tel:+2349033838340" className="text-primary font-medium hover:underline">
+                (+234) 903-838-340
               </a>
             </div>
 
@@ -87,21 +87,19 @@ export default function ContactPage() {
 
             <div className="bg-card p-8 rounded-xl border border-border text-center">
               <div className="bg-primary/10 p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
-                <MapPin className="h-8 w-8 text-primary" />
+                <MessageCircle className="h-8 w-8 text-primary"/>
               </div>
-              <h3 className="text-xl font-bold mb-3">Visit Us</h3>
-              <p className="text-muted-foreground mb-4">Come say hello at our office</p>
-              <address className="not-italic">
-                123 Innovation Street
-                <br />
-                Tech City, TC 10101
-              </address>
+              <h3 className="text-xl font-bold mb-3">Chat With Us</h3>
+              <p className="text-muted-foreground mb-4">We respond almost immediately</p>
+              <a href="tel:+2349033838340" className="text-primary font-medium hover:underline">
+              (+234) 903-838-340
+              </a>
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div className="flex justify-center gap-12 items-center">
             {/* Contact Form */}
-            <div>
+            {/* <div>
               <h2 className="text-3xl font-bold mb-6">Tell us about your project</h2>
               <p className="text-lg text-muted-foreground mb-8">
                 Fill out the form below and we'll get back to you as soon as possible.
@@ -250,16 +248,16 @@ export default function ContactPage() {
                   </button>
                 </form>
               )}
-            </div>
+            </div> */}
 
             {/* Book a Call */}
-            <div id="book-call">
+            <div id="book-call" className=" justify-center mx-auto justify-items-center ">
               <h2 className="text-3xl font-bold mb-6">Book a Call</h2>
               <p className="text-lg text-muted-foreground mb-8">
                 Schedule a 30-minute consultation call with our team to discuss your project in detail.
               </p>
 
-              <div className="bg-card p-8 rounded-xl border border-border">
+              <div className="bg-card p-8  rounded-xl border border-border">
                 <div className="bg-primary/10 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                   <Calendar className="h-8 w-8 text-primary" />
                 </div>
@@ -287,7 +285,7 @@ export default function ContactPage() {
                   </li>
                 </ul>
                 <a
-                  href="https://calendly.com/splashtechstudio/30min"
+                  href="https://calendly.com/emmyjaff22/30min"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary hover:bg-primary/90 text-white font-medium py-3 px-6 rounded-lg transition-all w-full flex items-center justify-center"
@@ -301,7 +299,7 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="py-12 bg-slate-50 dark:bg-slate-900/50">
+      {/* <section className="py-12 bg-slate-50 dark:bg-slate-900/50">
         <div className="container mx-auto px-4">
           <div className="rounded-xl overflow-hidden h-[400px] w-full">
             <iframe
@@ -315,7 +313,7 @@ export default function ContactPage() {
             ></iframe>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section className="py-20">
