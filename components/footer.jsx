@@ -84,18 +84,18 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 mt-0.5" />
-                <span>123 Innovation Street, Tech City, TC 10101</span>
+                <span>100% Remote</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2" />
                 <a href="tel:+11234567890" className="hover:text-white transition-colors">
-                  +1 (123) 456-7890
+                  (+234) 903-383-8340
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2" />
-                <a href="mailto:info@splashtechstudio.agency" className="hover:text-white transition-colors">
-                  info@splashtechstudio.agency
+                <a href="mailto:emmyjaff22@gmail.com" className="hover:text-white transition-colors">
+                  emmyjaff22@gmail.com
                 </a>
               </li>
             </ul>

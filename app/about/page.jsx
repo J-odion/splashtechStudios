@@ -64,9 +64,8 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Founded in 2023, SplashTechStudio began with a simple mission: to help businesses leverage technology to
-                achieve their goals. What started as a small team of three passionate developers has grown into a
-                full-service digital agency with expertise across web development, mobile apps, SaaS products, and
+                Founded in 2020, SplashTechStudio began with a simple mission: to help businesses leverage technology to
+                achieve their goals. We are a small team of extremely passionate developers with expertise across web development, mobile apps, SaaS products, and
                 project management.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
